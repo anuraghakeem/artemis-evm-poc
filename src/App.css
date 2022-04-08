@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.nav-container{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  height:80px;
+  justify-content: space-between;
+  box-shadow: 0px 10px 24px -1px rgba(82,82,82,0.35);
+  margin-bottom: 70px;
+  padding: 0 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.artemis-logo{
+  width: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button, .btn{
+  background: #f7b247;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 20px;
   color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 140px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-connect-wallet{
+  background: linear-gradient(90deg,#f7b247 0%,#f7b247 20%,#4acfd1);
+  width: auto;
+}
+.form-container{
+  padding: 0 100px;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 60px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  display:flex;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.input-box{
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.footer-conatiner{
+  background: #f7b247;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.buy-data-row{
+  margin-bottom: 25px;
+  word-wrap: break-word;
+}
+
+.btn-checkPrice{
+  margin-bottom: 20px;
 }
