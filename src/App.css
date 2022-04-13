@@ -1,19 +1,20 @@
-.nav-container{
-  display:flex;
+.nav-container {
+  display: flex;
   flex-direction: row;
-  align-items:center;
-  height:80px;
+  align-items: center;
+  height: 80px;
   justify-content: space-between;
-  box-shadow: 0px 10px 24px -1px rgba(82,82,82,0.35);
+  box-shadow: 0px 10px 24px -1px rgba(82, 82, 82, 0.35);
   margin-bottom: 70px;
   padding: 0 20px;
 }
 
-.artemis-logo{
+.artemis-logo {
   width: 15rem;
 }
 
-button, .btn{
+button,
+.btn {
   background: #f7b247;
   border: 0;
   padding: 10px 25px;
@@ -26,41 +27,107 @@ button, .btn{
   margin-right: 10px;
 }
 
-.btn-connect-wallet{
-  background: linear-gradient(90deg,#f7b247 0%,#f7b247 20%,#4acfd1);
+.btn-connect-wallet {
+  background: linear-gradient(90deg, #f7b247 0%, #f7b247 20%, #4acfd1);
   width: auto;
 }
-.form-container{
+.form-container {
   padding: 0 100px;
   max-width: 500px;
   margin: auto;
   margin-bottom: 60px;
-
 }
 
-.form{
-  display:flex;
+.form {
+  display: flex;
   flex-direction: column;
   word-wrap: break-word;
 }
 
-.input-box{
+.input-box {
   margin-bottom: 30px;
   margin-top: 10px;
 }
 
-.footer-conatiner{
+.footer-conatiner {
   background: #f7b247;
   color: white;
   text-align: center;
   padding: 50px 0;
 }
 
-.buy-data-row{
+.buy-data-row {
   margin-bottom: 25px;
   word-wrap: break-word;
 }
 
-.btn-checkPrice{
+.btn-checkPrice {
   margin-bottom: 20px;
+}
+
+onboard-v2 .svelte-2tc7bq {
+  display: none !important;
+}
+
+.profile-Dropdown {
+  display: none;
+  position: absolute;
+  right: 24px;
+  top: 80px;
+  padding: 10px 0px;
+  background: white;
+  box-shadow: 0px 10px 24px -1px rgba(82, 82, 82, 0.35);
+  width: 250px;
+}
+
+.profile-Dropdown.visible {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 20px 20px;
+  border-bottom: #dedede solid 1px;
+}
+
+.logout-button {
+  margin: 20px 20px;
+}
+
+.logout-button button {
+  width: 100%;
+}
+
+.wallet-image {
+  width: 40px;
+  cursor: pointer;
+}
+
+.dropdown-label {
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.chain-dropdown {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.nft-details-image img{
+  width: -webkit-fill-available;
+}
+
+/* Onboard CSS */
+
+:root {
+  --onboard-wallet-columns: 1;
+  --onboard-close-button-background: #f7b247;
+  --onboard-connect-sidebar-progress-color: #4acfd1;
+  --onboard-close-button-color: #fff;
+  /* --onboard-gray-200: #f7b247; */
+  --onboard-wallet-button-background-hover: #f7b247;
+  --onboard-wallet-app-icon-border-color: transparent;
+  --onboard-wallet-button-border-color: #f7b247;
+  --onboard-spacing-5: 1rem;
 }
